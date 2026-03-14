@@ -1,0 +1,540 @@
+/*
+ * CSS Testlari - Style.css
+ * Jami: 40 ta CSS test savollari va misollar
+ */
+
+/* ============================================
+   1. SELECTORLAR TESTLARI
+   ============================================ */
+
+/* Test 1: Element selector */
+.test-1 { color: red; }
+
+/* Test 2: Class selector */
+.class-selector { background: blue; }
+
+/* Test 3: ID selector */
+#id-selector { font-size: 16px; }
+
+/* Test 4: Universal selector */
+* { margin: 0; padding: 0; }
+
+/* Test 5: Attribute selector */
+[disabled] { opacity: 0.5; }
+
+/* Test 6: Descendant selector */
+.parent .child { color: green; }
+
+/* Test 7: Child selector */
+.parent > .child { border: 1px solid; }
+
+/* Test 8: Adjacent sibling */
+h1 + p { margin-top: 10px; }
+
+/* Test 9: General sibling */
+h1 ~ p { color: gray; }
+
+/* Test 10: Pseudo-class: hover */
+.btn:hover { background: darkblue; }
+
+/* Test 11: Pseudo-class: focus */
+.input:focus { border-color: blue; }
+
+/* Test 12: Pseudo-class: first-child */
+.list-item:first-child { font-weight: bold; }
+
+/* Test 13: Pseudo-class: last-child */
+.list-item:last-child { border-bottom: none; }
+
+/* Test 14: Pseudo-class: nth-child */
+.row:nth-child(2n) { background: #f0f0f0; }
+
+/* Test 15: Pseudo-element ::before */
+.box::before { content: "Boshlanish"; }
+
+/* Test 16: Pseudo-element ::after */
+.box::after { content: "Oxiri"; }
+
+/* Test 17: Pseudo-element ::first-line */
+.text::first-line { font-weight: bold; }
+
+/* Test 18: Pseudo-element ::selection */
+::selection { background: yellow; }
+
+
+/* ============================================
+   2. BOX MODEL TESTLARI
+   ============================================ */
+
+/* Test 19: Margin */
+.box-margin { margin: 20px; margin-top: 10px; margin-bottom: 10px; }
+
+/* Test 20: Padding */
+.box-padding { padding: 15px; padding-left: 20px; }
+
+/* Test 21: Border */
+.box-border { border: 1px solid black; border-width: 2px; }
+
+/* Test 22: Border radius */
+.rounded { border-radius: 10px; border-radius: 50%; }
+
+/* Test 23: Box shadow */
+.shadow { box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+
+/* Test 24: Width va Height */
+.size { width: 100px; height: 200px; max-width: 100%; }
+
+/* Test 25: Box sizing */
+.box-sizing { box-sizing: border-box; box-sizing: content-box; }
+
+
+/* ============================================
+   3. FLEXBOX TESTLARI
+   ============================================ */
+
+/* Test 26: Display flex */
+.flex-container { display: flex; display: inline-flex; }
+
+/* Test 27: Flex direction */
+.flex-direction { flex-direction: row; flex-direction: column; flex-direction: row-reverse; }
+
+/* Test 28: Flex wrap */
+.flex-wrap { flex-wrap: wrap; flex-wrap: nowrap; flex-wrap: wrap-reverse; }
+
+/* Test 29: Justify content */
+.justify { justify-content: flex-start; justify-content: center; justify-content: space-between; justify-content: space-around; }
+
+/* Test 30: Align items */
+.align-items { align-items: stretch; align-items: center; align-items: flex-start; align-items: flex-end; }
+
+/* Test 31: Align content */
+.align-content { align-content: flex-start; align-content: center; align-content: space-between; }
+
+/* Test 32: Flex grow va shrink */
+.flex-grow { flex-grow: 1; flex-shrink: 0; }
+
+/* Test 33: Flex basis */
+.flex-basis { flex-basis: 200px; flex: 1 1 auto; }
+
+/* Test 34: Align self */
+.align-self { align-self: auto; align-self: center; align-self: flex-end; }
+
+
+/* ============================================
+   4. GRID TESTLARI
+   ============================================ */
+
+/* Test 35: Display grid */
+.grid-container { display: grid; display: inline-grid; }
+
+/* Test 36: Grid template columns */
+.grid-columns { grid-template-columns: 1fr 1fr 1fr; grid-template-columns: repeat(3, 1fr); }
+
+/* Test 37: Grid template rows */
+.grid-rows { grid-template-rows: auto 1fr auto; }
+
+/* Test 38: Grid gap */
+.grid-gap { gap: 20px; row-gap: 10px; column-gap: 15px; }
+
+/* Test 39: Grid template areas */
+.grid-areas { 
+    grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "footer footer";
+}
+
+/* Test 40: Grid auto */
+.grid-auto { grid-auto-flow: row; grid-auto-columns: 1fr; }
+
+
+/* ============================================
+   5. POSITION VA LAYOUT TESTLARI
+   ============================================ */
+
+/* Test 41: Position static */
+.position-static { position: static; }
+
+/* Test 42: Position relative */
+.position-relative { position: relative; top: 10px; left: 20px; }
+
+/* Test 43: Position absolute */
+.position-absolute { position: absolute; top: 0; right: 0; bottom: 10px; left: 20px; }
+
+/* Test 44: Position fixed */
+.position-fixed { position: fixed; top: 0; left: 0; width: 100%; }
+
+/* Test 45: Position sticky */
+.position-sticky { position: sticky; top: 10px; }
+
+/* Test 46: Z-index */
+.z-index { z-index: 100; z-index: -1; }
+
+
+/* ============================================
+   6. RESPONSIVE VA MEDIA QUERY TESTLARI
+   ============================================ */
+
+/* Test 47: Media query - mobile */
+@media (max-width: 768px) {
+    .mobile-menu { display: block; }
+}
+
+/* Test 48: Media query - tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .tablet-view { width: 50%; }
+}
+
+/* Test 49: Media query - print */
+@media print {
+    .no-print { display: none; }
+}
+
+/* Test 50: Viewport units */
+.viewport-units { width: 100vw; height: 100vh; }
+
+
+/* ============================================
+   7. COLOR VA BACKGROUND TESTLARI
+   ============================================ */
+
+/* Test 51: Color qiymatlari */
+.colors { 
+    color: red; 
+    color: #ff0000; 
+    color: rgb(255, 0, 0); 
+    color: rgba(255, 0, 0, 0.5);
+    color: hsl(0, 100%, 50%);
+}
+
+/* Test 52: Background */
+.background { 
+    background: blue;
+    background-color: #f0f0f0;
+    background-image: url('image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Test 53: Gradient */
+.gradient { 
+    background: linear-gradient(to right, red, blue);
+    background: linear-gradient(45deg, red, blue, green);
+    background: radial-gradient(circle, red, blue);
+}
+
+
+/* ============================================
+   8. FONT VA TEXT TESTLARI
+   ============================================ */
+
+/* Test 54: Font properties */
+.font { 
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+/* Test 55: Text properties */
+.text { 
+    text-align: left;
+    text-align: center;
+    text-align: justify;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-indent: 20px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+/* Test 56: Text shadow */
+.text-shadow { text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+
+/* Test 57: White space */
+.white-space { white-space: nowrap; white-space: pre; white-space: pre-wrap; }
+
+/* Test 58: Word wrap */
+.word-wrap { word-wrap: break-word; overflow-wrap: break-word; }
+
+
+/* ============================================
+   9. ANIMATION VA TRANSITION TESTLARI
+   ============================================ */
+
+/* Test 59: Transition */
+.transition { 
+    transition: all 0.3s ease;
+    transition: background-color 0.5s, transform 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.2s;
+}
+
+/* Test 60: Animation */
+.animation { 
+    animation: name 1s ease-in-out;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes example {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100px); }
+    100% { transform: translateX(0); }
+}
+
+
+/* ============================================
+   10. TRANSFORM VA VISIBILITY TESTLARI
+   ============================================ */
+
+/* Test 61: Transform */
+.transform { 
+    transform: rotate(45deg);
+    transform: scale(1.5);
+    transform: translate(10px, 20px);
+    transform: skew(10deg, 20deg);
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+/* Test 62: Transform origin */
+.transform-origin { transform-origin: center center; transform-origin: top left; }
+
+/* Test 63: Visibility */
+.visibility { visibility: visible; visibility: hidden; opacity: 0; }
+
+/* Test 64: Overflow */
+.overflow { 
+    overflow: visible;
+    overflow: hidden;
+    overflow: scroll;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+/* ============================================
+   11. SPECIFICITY VA PRIORITY TESTLARI
+   ============================================ */
+
+/* Test 65: !important */
+.important { color: red !important; background: blue !important; }
+
+/* Test 66: Inline styles (HTMLda) */
+/* <div style="color: red;"></div> */
+
+/* Test 67: ID selector priority */
+#priority-id { color: purple; }
+
+/* Test 68: Class selector priority */
+.priority-class { color: orange; }
+
+/* Test 69: Element selector priority */
+div { color: green; }
+
+/* Test 70: Multiple classes */
+.class-one.class-two { color: teal; }
+
+
+/* ============================================
+   12. VARIABLES VA CALC TESTLARI
+   ============================================ */
+
+/* Test 71: CSS Variables */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --spacing: 20px;
+}
+
+.using-vars {
+    color: var(--primary-color);
+    padding: var(--spacing);
+    background: var(--secondary-color);
+}
+
+/* Test 72: Calc function */
+.calc-example { 
+    width: calc(100% - 40px);
+    height: calc(100vh - 100px);
+    font-size: calc(16px + 2vw);
+}
+
+
+/* ============================================
+   13. PSEUDO-CLASSES VA STATES
+   ============================================ */
+
+/* Test 73: :not() selector */
+:not(.exclude) { color: black; }
+
+/* Test 74: :nth-of-type */
+.item:nth-of-type(2n) { background: #eee; }
+
+/* Test 75: :checked selector */
+input:checked { width: 20px; height: 20px; }
+
+/* Test 76: :disabled va :enabled */
+input:disabled { opacity: 0.5; }
+input:enabled { background: white; }
+
+/* Test 77: :required va :optional */
+input:required { border-color: red; }
+input:optional { border-color: gray; }
+
+/* Test 78: :valid va :invalid */
+input:valid { border-color: green; }
+input:invalid { border-color: red; }
+
+
+/* ============================================
+   14. ADVANCED SELECTORS
+   ============================================ */
+
+/* Test 79: :has() selector */
+.container:has(.child) { border: 1px solid; }
+
+/* Test 80: :is() selector */
+:is(header, footer, aside) { padding: 20px; }
+
+/* Test 81: :where() selector */
+:where(.sidebar) { width: 250px; }
+
+
+/* ============================================
+   15. MULTIPLE PROPERTIES
+   ============================================ */
+
+/* Test 82: Object fit */
+.object-fit { 
+    object-fit: contain;
+    object-fit: cover;
+    object-fit: fill;
+}
+
+/* Test 83: Cursor */
+.cursor { 
+    cursor: pointer;
+    cursor: not-allowed;
+    cursor: grab;
+}
+
+/* Test 84: User select */
+.user-select { 
+    user-select: none;
+    user-select: text;
+    user-select: all;
+}
+
+/* Test 85: List style */
+.list-style { 
+    list-style: none;
+    list-style: disc inside;
+    list-style: decimal outside;
+}
+
+/* Test 86: Table layout */
+.table-layout { 
+    table-layout: fixed;
+    table-layout: auto;
+    border-collapse: collapse;
+    border-spacing: 5px;
+}
+
+
+/* ============================================
+   17. FILTER VA BACKDROP
+   ============================================ */
+
+/* Test 87: Filter */
+.filter-effect { 
+    filter: blur(5px);
+    filter: brightness(1.2);
+    filter: contrast(150%);
+    filter: grayscale(100%);
+    filter: sepia(50%);
+}
+
+/* Test 88: Backdrop filter */
+.backdrop { backdrop-filter: blur(10px); backdrop-filter: grayscale(50%); }
+
+
+/* ============================================
+   18. CLIP PATH VA MASKS
+   ============================================ */
+
+/* Test 89: Clip path */
+.clip-path { 
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: circle(50% at 50% 50%);
+    clip-path: ellipse(50% 50% at 50% 50%);
+}
+
+
+/* ============================================
+   20. MISC
+   ============================================ */
+
+/* Test 90: Will change */
+.will-change { will-change: transform; will-change: opacity; }
+
+/* Test 91: Contain */
+.contain { contain: layout style; contain: strict; }
+
+/* Test 92: Aspect ratio */
+.aspect-ratio { aspect-ratio: 16 / 9; }
+
+/* Test 93: Gap for flex/grid */
+.gap-example { gap: 20px; }
+
+/* Test 94: Place items */
+.place-items { place-items: center; }
+
+/* Test 95: Place self */
+.place-self { place-self: center; }
+
+/* Test 96: Writing mode */
+.writing-mode { 
+    writing-mode: horizontal-tb;
+    writing-mode: vertical-rl;
+    writing-mode: vertical-lr;
+}
+
+/* Test 97: Text overflow */
+.text-overflow { 
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Test 98: Line clamp */
+.line-clamp { 
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Test 99: Scroll snap */
+.scroll-snap {
+    scroll-snap-type: y mandatory;
+}
+
+.scroll-snap > * {
+    scroll-snap-align: start;
+}
+
+/* Test 100: Touch action */
+.touch-action {
+    touch-action: pan-x;
+    touch-action: pan-y;
+    touch-action: none;
+}
